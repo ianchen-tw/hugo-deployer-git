@@ -1,0 +1,11 @@
+[deploy]
+    # required field
+    repo = "<your github page repo>"
+    branch =  "master"
+
+    # optional_commit message, default to build time
+    message = ""
+
+    name= "testuser"
+    email= "test@testtest.com"
+    build-config= "--minify"

@@ -6,7 +6,7 @@ Inspired by [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git).
 
 ## Installation
 
-~`pip install hugo-deployer-git`~ (WIP)
+`pip3 install hugo-deployer-git`
 
 ## Setup
 
