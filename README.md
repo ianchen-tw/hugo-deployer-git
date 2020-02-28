@@ -6,17 +6,16 @@ Inspired by [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git).
 
 ## Installation
 
-`pip install hugo-deployer-git`
+~`pip install hugo-deployer-git`~ (WIP)
 
 ## Setup
 
-in your `config.toml`, put in this section
+In your `config.toml`, put in this section
 
 ```toml
 [deploy]
-
     # required field
-    repo = "https://github.com/ianre657/test-publisg-website.git"
+    repo = "<your github page repo>"
     branch =  "master"
 
     # optional_commit message, default to build time
