@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="hugo-deployer-git",
-    version="0.0.2",
+    version="0.0.4",
     license='MIT',
     url='https://github.com/ianre657/hugo-deployer-git',
     packages=find_packages( exclude=["test-site","tests"]),
@@ -21,6 +21,10 @@ setup(
       "Operating System :: OS Independent",
       "Development Status :: 2 - Pre-Alpha",
       "Topic :: Utilities",
+    ],
+    install_requires=[
+      'colorama',
+      'toml'
     ],
     entry_points={
       'console_scripts':[

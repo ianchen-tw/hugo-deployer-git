@@ -1,6 +1,6 @@
 # hugo-deployer-git
 
-Deploy your hugo site with git using one command
+Deploy your hugo site using one command
 
 Inspired by [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git).
 
@@ -10,7 +10,7 @@ Inspired by [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git).
 
 ## Setup
 
-In your `config.toml`, put in this section
+In your `config.toml`, insert this section with your configs.
 
 ```toml
 [hugo-deployer-git]
@@ -27,4 +27,4 @@ In your `config.toml`, put in this section
 
 ## How to use
 
-In your hugo website folder, use `hugo-deployer-git`.
+cd to your hugo project and use `hugo-deployer-git`.
