@@ -7,8 +7,7 @@ def main():
 
   with open('config.toml', "r") as cfg_toml:
     config = toml.loads(cfg_toml.read())
-  # print(config)
-  dp = Deployer( config['deploy'], src_dir=".")
+  dp = Deployer( config['hugo-deployer-git'], src_dir=".")
   dp.deploy()
 
 if __name__ == "__main__":

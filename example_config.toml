@@ -1,11 +1,10 @@
-[deploy]
-    # required field
-    repo = "<your github page repo>"
+[hugo-deployer-git]
+    # required
+    repo = "https://github.com/ianre657/test-publisg-website.git"
     branch =  "master"
 
-    # optional_commit message, default to build time
-    message = ""
-
-    name= "testuser"
+    # optoinal
+    name= "haha"
     email= "test@testtest.com"
+    message = ""
     build-config= "--minify"

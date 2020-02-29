@@ -13,16 +13,15 @@ Inspired by [hexo-deployer-git](https://github.com/hexojs/hexo-deployer-git).
 In your `config.toml`, put in this section
 
 ```toml
-[deploy]
-    # required field
-    repo = "<your github page repo>"
+[hugo-deployer-git]
+    # required
+    repo = "your github page repo"
     branch =  "master"
 
-    # optional_commit message, default to build time
-    message = ""
-
-    name= "testuser"
+    # optoinal
+    name= "haha"
     email= "test@testtest.com"
+    message = ""
     build-config= "--minify"
 ```
 

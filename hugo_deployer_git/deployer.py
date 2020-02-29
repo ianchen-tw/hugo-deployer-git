@@ -1,8 +1,8 @@
 from typing import Dict, List
-import subprocess as sp
 from pathlib import Path
-import shutil
 from datetime import datetime
+import shutil
+import subprocess as sp
 
 from .fsutil import empty_tree
 from .fsutil import copy_cover_tree
@@ -70,7 +70,7 @@ class Deployer:
 
   @passed
   def fetch_deploy_dir(self):
-    sp.run()
+    pass
 
   # @passed
   def copy_website(self):
@@ -94,9 +94,8 @@ class Deployer:
       return s.split()
 
     now = datetime.now().strftime("%Y-%m-%d %I:%M:%S %p")
-    commit_msg = f":robot: Rebuilding Site on {now}"
-    if len(msg) > 0:
-      commit_msg += f': {msg}'
+    optional_str = f'{msg} @' if len(msg) > 0 else ''
+    commit_msg = f":robot: {optional_str} {now}"
 
     cmd_flow = [
       # add
@@ -107,6 +106,3 @@ class Deployer:
     ]
     for cmd in cmd_flow:
       sp.run(cmd, cwd=self.deploy_dir)
-
-  def commit_messgage( self,msg: str):
-    return msg

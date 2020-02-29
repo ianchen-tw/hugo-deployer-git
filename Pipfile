@@ -5,10 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 twine = "*"
+pytest = "*"
 
 [packages]
 toml = "*"
 setuptools = "*"
+colorama = "*"
 
 [requires]
 python_version = "3.7"
